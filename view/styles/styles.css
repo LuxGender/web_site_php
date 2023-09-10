@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* 
+    PRINCIPAL
+*/
+.body-menu{
+    width: 100%;
+    min-height: 100vh;
+    /* background: aqua; */
+}
+
+.header-menu{
+    display: flex;
+    background: #04192A;
+    width: 100%;
+    height: 100px;
+    max-height: 100px;
+    min-height: 140px;
+}
+
+
+.main-menu{
+    /* display: flex;
+    width:100%; */
+    min-height: calc(100vh - 140px) !important;
+
+}
+
+.main-menu-cars{
+    display: flex !important;
+    width:100% !important;
+    align-items: center !important;
+    min-height: calc(100vh - 140px) !important;
+
+}
+
+.aside-left{
+    padding:1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-menu{
+    display: flex;
+    background: #04192A;
+    width: 100%;
+    height: 100px;
+}
+
+
+/*  CONTENT */
+.section-menu{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+}
+
+
+/* .card-image{
+    width: 340px;
+    background: cyan ;
+    border: 1px solid #000;
+    padding: 1em;
+} */
+
+.img-card{
+    width: 100%;
+    max-width: 260px;
+    height: 200px;
+}
+
+.btn-menu{
+    /* width: 100px;
+    min-height: 538px !important; */
+    height: 100%;
+    background:  #04192A !important;
+}
+
+.back-mod{
+    background: #04192A !important;
+}
+
+.color-text{
+    color: honeydew !important;
+}
+
+.close-modal{
+    background-color: white !important;
+}
+
+/* importado */
+.img-container {
+    transition: transform .1s ease;
+  }
+
+  
+.img-container:hover {
+    transform: scale(1.1);
+    /*
+    Change the scale value as much as you want to change the amount of zoom on hover.
+    */
+  }
+
+  .card img {
+    opacity: .9;
+    transform: translate(0,0);
+    /*
+    Change the opacity value to change how "faded" you want the image to appear when it is not hovered.
+    */
+    transition: opacity .25s ease-in-out;
+  }
+  
+  .card img:hover {
+    opacity: 3;
+  }
+
+
+  .header-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.container-table{
+    width: 100%;
+}
+
+.btn-confirmar-cars{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
