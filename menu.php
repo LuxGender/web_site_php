@@ -54,12 +54,12 @@
                                 <!-- empieza aqui -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne<?php echo $row['id_categoria']; ?>" aria-expanded="false" aria-controls="flush-collapseOne<?php echo $row['id_categoria']; ?>">
                                             <!-- Accordion Item #1 -->
                                             <?php echo $row['nombre_categoria']; ?>
                                         </button>
                                     </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="flush-collapseOne<?php echo $row['id_categoria']; ?>" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div class="accordion-body">
                                             <a href="">Ver</a>  
                                         </div>
@@ -103,15 +103,15 @@
                             <div class="col-lg-4 col-md-auto col-sm-auto">
                                 <div class="row gy-4 card-image">
                                     <!-- <h3>Pollo a la francesa</h3> -->
-                                    <h3><?php echo $row['nombre_menu']; ?></h3>
+                                    <h3 id="nombre-mne"><?php echo $row['nombre_menu']; ?></h3>
                                     <div class="img-container">
                                         <img class="img-card" src="<?php echo $row['img_menu']; ?>" alt="img" />
                                     </div>
                                     <div>
-                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-                                            Ver detalle
+                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle-<?php echo $row['id_menu']; ?>" data-bs-toggle="modal">
+                                            Ver detalle <?php echo $row['id_menu']; ?>
                                         </button>
-                                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal fade" id="exampleModalToggle-<?php echo $row['id_menu']; ?>" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                                             <div class="modal-dialog modal-dialog-centered modal-lg">
                                                 <div class="modal-content">
                                                     <div class="modal-header back-mod">
@@ -127,6 +127,8 @@
                                                             </h4>
                                                             <p>
                                                                 <strong>Descripcion:</strong> <?php echo $row['descripcion']; ?>
+                                                                <br>
+                                                                <strong>Precio:</strong> <?php echo $row['precio']; ?>
                                                             </p>
                                                         </div>
                                                     </div>

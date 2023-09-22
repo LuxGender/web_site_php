@@ -65,7 +65,7 @@
 
       <!-- hidden -->
       <label for="id_cat"></label>
-      <input type="hidden" name="id_cat" id="id_cat">
+      <input type="text" name="id_cat" id="id_cat">
     </div>
     <!-- btn guardar -->
     <div class="col-12">
