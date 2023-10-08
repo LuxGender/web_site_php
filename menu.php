@@ -50,23 +50,23 @@
                         if (mysqli_num_rows($result_tasks) > 0) {
                             while ($row = mysqli_fetch_assoc($result_tasks)) {
                         ?>
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <!-- empieza aqui -->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne<?php echo $row['id_categoria']; ?>" aria-expanded="false" aria-controls="flush-collapseOne<?php echo $row['id_categoria']; ?>">
-                                            <!-- Accordion Item #1 -->
-                                            <?php echo $row['nombre_categoria']; ?>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne<?php echo $row['id_categoria']; ?>" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <a href="">Ver</a>  
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <!-- empieza aqui -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne<?php echo $row['id_categoria']; ?>" aria-expanded="false" aria-controls="flush-collapseOne<?php echo $row['id_categoria']; ?>">
+                                                <!-- Accordion Item #1 -->
+                                                <?php echo $row['nombre_categoria']; ?>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne<?php echo $row['id_categoria']; ?>" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <a href="">Ver</a>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- termina aqui -->
                                 </div>
-                                <!-- termina aqui -->
-                            </div>
                         <?php
                             }
                         } else {

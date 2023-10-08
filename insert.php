@@ -4,12 +4,12 @@
   <div class="container" style="padding:1em;">
     <div class="row">
       <div>
-        <a class="btn btn-primary" href="index.php" role="button">Home
-          <i class="bi bi-house-door"></i>
+        <a class="btn btn-primary" href="admin.php" role="button">Regresar
+          <i class="bi bi-arrow-left"></i>
         </a>
       </div>
       <div class="header-container">
-        <h3 class="color-text heading">Insertar registros</h3>
+        <h3 class="color-text heading">Agregar productos</h3>
       </div>
     </div>
   </div>
@@ -65,7 +65,7 @@
 
       <!-- hidden -->
       <label for="id_cat"></label>
-      <input type="text" name="id_cat" id="id_cat">
+      <input type="hidden" name="id_cat" id="id_cat">
     </div>
     <!-- btn guardar -->
     <div class="col-12">
